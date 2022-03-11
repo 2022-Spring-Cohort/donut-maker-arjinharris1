@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Clicker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div bg-primary>
+  <div class="container">
+    <h1>The Shop!</h1>
+    <ul>
+      <li>Inperation</li>
+      <li>About us</li>
+      <li>developer</li>
+    </ul>
+  </div>
+  <ul class="container" >
+    <li class="col-md-4">
+      <div id="donutmaker">
+        <h2>The Donut Shop</h2>
+        <!-- <h3 class="dpc">text</h3> -->
+        <label>Donut Count: </label><br>
+        <input type="text" name="DonutCount" id="DonutCountBox" readonly />
+        <br />
+        <p> </p>
+         <br><br>
+        <button type="button", class="btn btn-success" id="DonutMakerButton">Make Donut</button>
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div id="autoClicker">
+        <h2>Auto Clicker's</h2>
+        <label>Number of Auto Clickers</label>
+        <input type="text" , name="AutoClickerCount" , id="autoClickerCountBox" , readonly />
+        <br />
+       
+        <label>Auto Clicker Price</label><br />
+        <input for="buyAutoClickerButton" , type="text" name="autoClickerPrice" id="autoClickerPrice" , readonly />
+        <button type="button", class="btn btn-success" id="buyAutoClickerButton">Buy Auto Clicker</button><br />
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div id="multiplier">
+        <h2>Multipliers</h2>
+        <label>Number of Multipliers</label>
+        <input type="text" , name="multiplierCount" , id="MultiplierCountBox" readonly /> <br />
+        
+        <label>Multiplier Price</label><br>
+        <input type="text" , name="multiplierPrice" , id="multiplierPrice" , readonly>
+        <button type="button", class="btn btn-success" id="buyMultiplierButton">Buy Multiplier</button>
+      </div>
+    </li>
+  </ul>
+  <br><div class="container">
+  <button type="button", class="btn btn-danger" id="resetButton">Reset</button>
+  </div>
+  <script src="./js/index.js"></script>
+  <!-- <script src="./js/shop.js"></script> -->
+  </div>
+</body>
+
 </html>
