@@ -1,0 +1,9 @@
+*{
+    list-style-type: none;
+   
+}
+body{
+    background-image: url(/donuts.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
